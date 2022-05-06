@@ -25,7 +25,7 @@ public class RoadSpawnManager : MonoBehaviour
 
     private void Update()
     {
-        if (PlayerTransform.position.z + 50 > SpawnTarget - (TileLenght))
+        if (PlayerTransform.position.z > SpawnTarget - (TileLenght * 3.5f))
         {
             SpawnRoad();
             DeleteRoad();
